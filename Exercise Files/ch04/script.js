@@ -31,13 +31,22 @@
 // console.log("Fraction Result:", fracR[0] + "with a value of " + fracR[1] + " is the biggest.");
 
 
-var a = 5/7;
-var b = 18/25;
+// var a = 5/7;
+// var b = 18/25;
+//
+// var biggest = function() {
+//   var result;
+//   a>b ? result = ["a:", a]: result = ["b:", b];
+//   console.log("Biggest: " + result);
+// }
+//
+// biggest();
 
-var biggest = function() {
-  var result;
-  a>b ? result = ["a:", a]: result = ["b:", b];
-  console.log("Biggest: " + result);
-}
+var big = (function(a,b){
+var result;
+a>b ? result = ["a:", a]: result = ["b:", b];
+//console.log("Biggest: " + result);
+return result;
+})(7/9, 13/25);
 
-biggest();
+console.log(big);
